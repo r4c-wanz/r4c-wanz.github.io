@@ -7,81 +7,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="./styles/tailwind.css" rel="stylesheet">
-    <style>
-        @keyframes rotate360 {
-            to { transform: rotate(360deg); }
-        }
-        .ellipse-dashed { animation: 50s rotate360 infinite linear; }
-        .teks-filter {
-            filter: drop-shadow(0px 24px 34px rgba(199, 201, 217, 0.20));
-        }
-        .task-progress-filter {
-            filter: drop-shadow(0px 24px 34px rgba(199, 201, 217, 0.25));
-        }
-        .card-shadow {
-            box-shadow: 0px 24px 34px 0px rgba(199, 201, 217, 0.25);
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./css/tailwind.css" rel="stylesheet">
 </head>
 <body class="font-inter">
     <header class="w-full h-screen bg-[#F9F8FF]">
-        <div class="mx-auto max-w-[1200px] pt-10 flex justify-between text-black">
-            <a href="/">
+        <div class="mx-auto max-w-[1200px] pt-10 text-black">
+            <a href="/" class="inline-block">
                 <h1 class="text-2xl font-semibold tracking-[0.48px]">Rachel <span class="text-primary">Setyawan</span></h1>
             </a>
         </div>
-        <div class="mx-auto mt-[50px] max-w-[1200px]">
-            <div class="mt-[50px] float-left max-w-[578px] space-y-6">
+        <div class="mx-auto pt-[50px] max-w-[1200px] flex flex-col lg:flex-row">
+            <div class="order-2 lg:order-1 pt-[50px] block w-full lg:max-w-[578px] space-y-6">
                 <h1 class="text-black text-[54px] font-bold leading-[70px] tracking-[1.0388534px]">I’m Frontend Website Developers</h1>
                 <p class="max-w-[527px] text-grey text-sm tracking-[0.28px]">Freelance Programing and Frontend Website Developers based on Jakarta, Indonesia</p>
                 <a href="mailto:rahelsetyawan321@gmai.com" class="inline-block bg-primary rounded-lg px-10 py-4 text-white text-sm font-semibold tracking-[0.28px]">Hire Me</a>
             </div>
-            <div class="mt-[5px] -mr-1 float-right relative">
-                <div class="relative overflow-hidden">
-                    <svg class="ellipse-dashed" width="576" height="576" viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="288" cy="288" r="286" stroke="#7868E6" stroke-width="4" stroke-linecap="square" stroke-dasharray="20 20"/>
-                    </svg>
-                    <img src="/assets/images/hero-image.png" alt="hero-image" class="absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-[calc(-50%-24.5px)]">
-                </div>
-                <div class="teks-filter w-[191px] h-[136px] absolute top-[15px] right-[30px]">
-                    <div class="bg-white rounded-lg pl-4 pt-6 pr-[23px] pb-[29px]">
-                        <p class="text-black text-[13px] leading-[18px] tracking-[0.26px]">Hi, I’m Rachel Setyawan Web Developers</p>
+            <div class="order-1 lg:order-2 relative w-full h-[580px] pt-[5px]">
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:-left-[73px] lg:top-0 lg:-translate-x-0 lg:-translate-y-0 w-[669px] h-full">
+                    <div class="absolute top-1/2 right-0 -translate-y-1/2 w-[576px] h-[576px] overflow-hidden">
+                        <svg viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg" class="ellipse-dashed w-full h-full">
+                            <circle cx="288" cy="288" r="286" stroke="#7868E6" stroke-width="4" stroke-linecap="square" stroke-dasharray="20 20"/>
+                        </svg>
+                        <img src="/assets/images/hero-image.png" alt="hero-image" class="absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-[calc(-50%-24.5px)] w-full max-w-[491px]">
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="30" viewBox="0 0 54 30" fill="none" class="ml-7">
-                        <path d="M0 29.2266V0H53.8L0 29.2266Z" fill="white"/>
-                    </svg>
-                </div>
-                <div class="task-progress-filter w-56 bg-white rounded-lg p-7 space-y-[22px] absolute -left-[127px] top-[234px]">
-                    <h1 class="text-sm leading-[21px] tracking-[0.28px]">My Skills</h1>
-                    <div class="h-6">
-                        <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">Frontend Developer</h2>
-                        <div class="mt-[5.03px] w-full h-[2.99px] bg-[#5448A11A] rounded-[200px]">
-                            <div class="w-4/5 h-[3px] bg-[#7868E6] rounded-[200px]"></div>
+                    <div class="task-progress-filter w-56 bg-white rounded-lg p-7 space-y-[22px] absolute left-0 top-[234px]">
+                        <h1 class="text-sm leading-[21px] tracking-[0.28px]">My Skills</h1>
+                        <div class="h-6">
+                            <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">Frontend Developer</h2>
+                            <div class="mt-[5.03px] w-full h-[2.99px] bg-[#5448A11A] rounded-[200px]">
+                                <div class="w-4/5 h-[3px] bg-[#7868E6] rounded-[200px]"></div>
+                            </div>
+                        </div>
+                        <div class="h-6">
+                            <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">Programing</h2>
+                            <div class="mt-[6px] w-full h-[2.99px] bg-[#A154481A] rounded-[200px]">
+                                <div class="w-4/5 h-[3px] bg-[#E67868] rounded-[200px]"></div>
+                            </div>
+                        </div>
+                        <div class="h-6">
+                            <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">UI/UX Designers</h2>
+                            <div class="mt-[6px] w-full h-[2.99px] bg-[#48A1541A] rounded-[200px]">
+                                <div class="w-1/2 h-[3px] bg-[#68E678] rounded-[200px]"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="h-6">
-                        <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">Programing</h2>
-                        <div class="mt-[6px] w-full h-[2.99px] bg-[#A154481A] rounded-[200px]">
-                            <div class="w-4/5 h-[3px] bg-[#E67868] rounded-[200px]"></div>
+                    <div class="teks-filter w-[191px] h-[136px] absolute top-[15px] right-[18px]">
+                        <div class="bg-white rounded-lg pl-4 pt-6 pr-[23px] pb-[29px]">
+                            <p class="text-black text-[13px] leading-[18px] tracking-[0.26px]">Hi, I’m Rachel Setyawan Web Developers</p>
                         </div>
-                    </div>
-                    <div class="h-6">
-                        <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">UI/UX Designers</h2>
-                        <div class="mt-[6px] w-full h-[2.99px] bg-[#48A1541A] rounded-[200px]">
-                            <div class="w-1/2 h-[3px] bg-[#68E678] rounded-[200px]"></div>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 30" fill="none" class="ml-7 -mt-px w-[54px] h-[30px]">
+                            <path d="M0 29.2266V0H53.8L0 29.2266Z" fill="white"/>
+                        </svg>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="mx-auto mt-[150px] max-w-[1200px]">
-        <div class="w-[1199px] text-center">
+    <section class="mx-auto pt-[150px] max-w-[1200px]">
+        <div class="w-full text-center">
             <h1 class="text-black text-[32px] font-bold leading-10 tracking-[0.64px]">Specialities</h1>
             <p class="text-grey text-sm tracking-[0.28px]">Beberapa keahlian saya dalam menangani product digital.</p>
         </div>
-        <div class="mt-[60px] w-[1199px] grid grid-cols-3 gap-[139px]">
+        <div class="mt-[60px] w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[139px]">
             <div>
                 <div class="h-[3px] bg-primary"></div>
                 <div class="card-shadow mt-[2px] bg-white pl-10 pt-[50px] pr-[22px] pb-[47px]">
@@ -128,13 +116,13 @@
             </div>
         </div>
     </section>
-    <section class="mx-auto mt-[150px] max-w-[1200px]">
-        <div class="w-[1199px] text-center">
+    <section class="mx-auto pt-[150px] max-w-[1200px]">
+        <div class="text-center">
             <h1 class="text-black text-[32px] font-bold leading-10 tracking-[0.64px]">My Portfolio</h1>
             <p class="text-grey text-sm tracking-[0.28px]">Berikut adalah beberapa portofolio yang telah saya kerjakan.</p>
         </div>
         <div class="mt-[60px]">
-            <div class="grid grid-cols-2 gap-[30px]">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-[30px]">
                 <div>
                     <img src="/assets/images/portofolio-image-1.png" alt="Portofolio Image 1" loading="lazy" class="h-[439px] rounded-[10px]">
                     <h2 class="mt-5 text-black text-[28px] font-bold leading-9 tracking-[0.84px]">StarVest Webpage</h2>
@@ -146,7 +134,7 @@
                     <p class="mt-[10px] text-grey text-sm tracking-[0.42px]">UI/UX Design</p>
                 </div>
             </div>
-            <div class="mt-[30px] grid grid-cols-3 gap-[30px]">
+            <div class="mt-[30px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-[30px]">
                 <div class="mt-px w-[379px]">
                     <img src="/assets/images/portofolio-image-3.png" alt="Portofolio Image 3" loading="lazy" class="w-[379px] h-[284px] rounded-[10px]">
                     <h2 class="mt-5 text-black text-xl font-bold leading-9 tracking-[0.6px]">JED Webpage</h2>
@@ -165,8 +153,10 @@
             </div>
         </div>
     </section>
-    <footer class="mx-auto mt-[150px] mb-[59px] max-w-[1200px] flex justify-between items-center text-black">
-        <h1 class="text-2xl font-semibold tracking-[0.48px]">Rachel Setyawan</h1>
+    <footer class="mx-auto pt-[150px] pb-[59px] max-w-[1200px] flex justify-between items-center text-black">
+        <a href="/">
+            <h1 class="text-2xl font-semibold tracking-[0.48px]">Rachel Setyawan</h1>
+        </a>
         <a href="mailto:rahelsetyawan321@gmai.com" class="bg-primary rounded-lg px-5 py-3 text-white font-medium">Hire Me</a>
     </footer>
 </body>
