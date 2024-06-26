@@ -3,7 +3,7 @@
     "tailwindcss": "^3.3.3"
   },
   "name": "personal-website-giatin-tailwindcss",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Personal Website Portfolio",
   "main": "tailwind.config.js",
   "dependencies": {

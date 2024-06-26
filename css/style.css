@@ -2,20 +2,214 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes rotate360 {
-    to { transform: rotate(360deg); }
+body {
+    @apply
+    font-inter
 }
 
-.ellipse-dashed {
+header {
+    @apply
+    w-full
+    h-screen
+    bg-[#F9F8FF]
+    overflow-hidden
+}
+
+.content-container {
+    @apply
+    mx-auto
+    max-w-[1200px]
+}
+
+header nav.nav {
+    @apply
+    px-4
+    xl:px-0
+    py-10
+    text-black
+}
+
+nav.nav a.nav-link {
+    @apply
+    inline-block
+    text-2xl
+    font-semibold
+    tracking-[0.48px]
+}
+
+a.nav-link span {
+    @apply
+    text-primary
+}
+
+header .header-content-wrapper {
+    @apply
+    px-4
+    xl:px-0
+    py-2.5
+    flex
+    flex-col
+    lg:flex-row
+}
+
+.header-content-wrapper .left-hero-content {
+    @apply
+    order-2
+    lg:order-1
+    h-max
+    py-[50px]
+    block
+    w-full
+    max-[768px]:max-w-[578px]
+    space-y-6
+}
+
+.header-content-wrapper .right-hero-content {
+    @apply
+    order-1
+    lg:order-2
+    relative
+    w-full
+    h-full
+    lg:h-[580px]
+    pt-[5px]
+}
+
+.right-hero-content .component-wrapper {
+    @apply
+    absolute left-1/2
+    top-1/2
+    -translate-x-1/2
+    -translate-y-1/2
+    lg:-left-[73px]
+    lg:top-0
+    lg:-translate-x-0
+    lg:-translate-y-0
+    w-full
+    max-[320px]:w-[250px]
+    lg:w-[669px]
+    md:w-full
+    h-full
+}
+
+.component-wrapper .main-component-wrapper {
+    @apply
+    absolute top-1/2
+    right-0
+    -translate-y-1/2
+    w-full
+    h-full
+    overflow-hidden
+}
+
+@keyframes rotate360 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main-component-wrapper svg {
+    @apply
+    w-full
+    h-full;
     animation: 50s rotate360 infinite linear;
+}
+
+.main-component-wrapper img {
+    @apply
+    absolute
+    left-1/2
+    top-1/2
+    -translate-x-1/2
+    -translate-y-1/2
+    w-full
+    max-w-[340px]
+    sm:max-w-[491px]
+}
+
+.component-wrapper .task-progress {
+    @apply
+    w-56
+    bg-white
+    rounded-lg
+    p-7
+    space-y-[22px]
+    absolute
+    top-[234px]
+    right-[475px]
+    max-[730px]:hidden
+    drop-shadow-[0_24px_34px_rgba(199,201,217,0.25)]
+}
+
+.task-progress .title {
+    @apply
+    text-sm
+    leading-[21px]
+    tracking-[0.28px]
+}
+
+.task-progress .progress-skills-wrapper {
+    @apply
+    h-6
+}
+
+.progress-skills-wrapper h1 {
+    @apply
+    text-black
+    text-xs
+    leading-[15px]
+    tracking-[0.3px]
+}
+
+.progress-skills-wrapper .bar-wrapper {
+    @apply
+    mt-1.5
+    w-full
+    h-[3px]
+    rounded-full
+}
+
+.bar-wrapper.bar-wrapper-1 {
+    @apply
+    bg-[#5448A11A]
+}
+
+.bar-wrapper.bar-wrapper-2 {
+    @apply
+    bg-[#A154481A]
+}
+
+.bar-wrapper.bar-wrapper-3 {
+    @apply
+    bg-[#48A1541A]
+}
+
+.bar-wrapper .bar {
+    @apply
+    h-[3px]
+    rounded-full
+}
+
+.bar-wrapper .bar.bar-1 {
+    @apply
+    w-4/5
+    bg-[#7868E6]
+}
+
+.bar-wrapper .bar.bar-2 {
+    @apply
+    w-4/5
+    bg-[#E67868]
+}
+
+.bar-wrapper .bar.bar-3 {
+    @apply
+    w-1/2
+    bg-[#68E678]
 }
 
 .teks-filter {
     filter: drop-shadow(0px 24px 34px rgba(199, 201, 217, 0.20));
-}
-
-.task-progress-filter {
-    filter: drop-shadow(0px 24px 34px rgba(199, 201, 217, 0.25));
 }
 
 .card-shadow {

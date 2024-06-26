@@ -3,52 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Portfolio Rachel Setyawan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="./css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tailwind.css">
 </head>
-<body class="font-inter">
-    <header class="w-full h-screen bg-[#F9F8FF] overflow-hidden">
-        <div class="mx-auto max-w-[1200px] px-4 xl:px-0 pt-10 text-black">
-            <a href="/" class="inline-block">
-                <h1 class="text-2xl font-semibold tracking-[0.48px]">Rachel <span class="text-primary">Setyawan</span></h1>
+<body>
+    <header>
+        <nav class="content-container nav">
+            <a href="/" class="nav-link">
+                Rachel
+                <span>Setyawan</span>
             </a>
-        </div>
-        <div class="mx-auto px-4 xl:px-0 pt-[50px] max-w-[1200px] flex flex-col lg:flex-row">
-            <div class="order-2 lg:order-1 pt-[50px] block w-full lg:max-w-[578px] space-y-6">
+        </nav>
+        <div class="content-container header-content-wrapper">
+            <div class="left-hero-content">
                 <h1 class="text-black text-[54px] font-bold leading-[70px] tracking-[1.0388534px]">I’m Frontend Website Developers</h1>
                 <p class="max-w-[527px] text-grey text-sm tracking-[0.28px]">Freelance Programing and Frontend Website Developers based on Jakarta, Indonesia</p>
                 <a href="mailto:rahelsetyawan321@gmai.com" class="inline-block bg-primary rounded-lg px-10 py-4 text-white text-sm font-semibold tracking-[0.28px]">Hire Me</a>
             </div>
-            <div class="order-1 lg:order-2 relative w-full h-[580px] pt-[5px]">
-                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:-left-[73px] lg:top-0 lg:-translate-x-0 lg:-translate-y-0 w-full max-[320px]:w-[250px] lg:w-[669px] md:w-full h-full">
-                    <div class="absolute top-1/2 right-0 -translate-y-1/2 w-full h-full overflow-hidden">
-                        <svg viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg" class="ellipse-dashed w-full h-full">
+            <div class="right-hero-content">
+                <div class="component-wrapper">
+                    <div class="main-component-wrapper">
+                        <svg viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="288" cy="288" r="286" stroke="#7868E6" stroke-width="4" stroke-linecap="square" stroke-dasharray="20 20"/>
                         </svg>
-                        <img src="/assets/images/hero-image.png" alt="hero-image" class="absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-[calc(-50%-24.5px)] w-full max-w-[340px] sm:max-w-[491px]">
+                        <img src="./assets/images/hero-image.png" alt="Hero Image">
                     </div>
-                    <div class="task-progress-filter w-56 bg-white rounded-lg p-7 space-y-[22px] absolute top-[234px] right-[475px] max-[730px]:hidden">
-                        <h1 class="text-sm leading-[21px] tracking-[0.28px]">My Skills</h1>
-                        <div class="h-6">
-                            <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">Frontend Developer</h2>
-                            <div class="mt-[5.03px] w-full h-[2.99px] bg-[#5448A11A] rounded-[200px]">
-                                <div class="w-4/5 h-[3px] bg-[#7868E6] rounded-[200px]"></div>
+                    <div class="task-progress">
+                        <h1 class="title">My Skills</h1>
+                        <div class="progress-skills-wrapper">
+                            <h1>Frontend Developer</h1>
+                            <div class="bar-wrapper bar-wrapper-1">
+                                <div class="bar bar-1"></div>
                             </div>
                         </div>
-                        <div class="h-6">
-                            <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">Programing</h2>
-                            <div class="mt-[6px] w-full h-[2.99px] bg-[#A154481A] rounded-[200px]">
-                                <div class="w-4/5 h-[3px] bg-[#E67868] rounded-[200px]"></div>
+                        <div class="progress-skills-wrapper">
+                            <h1>Programing</h1>
+                            <div class="bar-wrapper bar-wrapper-2">
+                                <div class="bar bar-2"></div>
                             </div>
                         </div>
-                        <div class="h-6">
-                            <h2 class="h-[15px] text-black text-xs tracking-[0.3px]">UI/UX Designers</h2>
-                            <div class="mt-[6px] w-full h-[2.99px] bg-[#48A1541A] rounded-[200px]">
-                                <div class="w-1/2 h-[3px] bg-[#68E678] rounded-[200px]"></div>
+                        <div class="progress-skills-wrapper">
+                            <h1>UI/UX Designers</h1>
+                            <div class="bar-wrapper bar-wrapper-3">
+                                <div class="bar bar-3"></div>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
             </div>
         </div>
     </header>
-    <section class="mx-auto px-4 xl:px-0 pt-[150px] max-w-[1200px]">
+    <section class="content-container px-4 xl:px-0 pt-[150px]">
         <div class="w-full text-center">
             <h1 class="text-black text-[32px] font-bold leading-10 tracking-[0.64px]">Specialities</h1>
             <p class="text-grey text-sm tracking-[0.28px]">Beberapa keahlian saya dalam menangani product digital.</p>
@@ -116,7 +116,7 @@
             </div>
         </div>
     </section>
-    <section class="mx-auto px-4 xl:px-0 pt-[150px] max-w-[1200px]">
+    <section class="content-container px-4 xl:px-0 pt-[150px]">
         <div class="text-center">
             <h1 class="text-black text-[32px] font-bold leading-10 tracking-[0.64px]">My Portfolio</h1>
             <p class="text-grey text-sm tracking-[0.28px]">Berikut adalah beberapa portofolio yang telah saya kerjakan.</p>
@@ -153,7 +153,7 @@
             </div>
         </div>
     </section>
-    <footer class="mx-auto px-4 xl:px-0 pt-[150px] pb-[59px] max-w-[1200px] flex justify-between items-center text-black">
+    <footer class="content-container px-4 xl:px-0 pt-[150px] pb-[59px] flex justify-between items-center text-black">
         <a href="/">
             <h1 class="text-2xl font-semibold tracking-[0.48px]">Rachel Setyawan</h1>
         </a>
