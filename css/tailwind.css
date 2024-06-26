@@ -2871,20 +2871,8 @@ video {
   }
 }
 
-@media (max-width: 720px) {
-  .max-\[720px\]\:hidden {
-    display: none;
-  }
-}
-
 @media (max-width: 320px) {
   .max-\[320px\]\:w-\[250px\] {
-    width: 250px;
-  }
-}
-
-@media (min-width: 320px) {
-  .min-\[320px\]\:w-\[250px\] {
     width: 250px;
   }
 }
